@@ -1,0 +1,92 @@
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 10px; right: 20px}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #202632;
+    font-size: 28px;
+    font-family: 'Manrope', Tahoma, Geneva, Verdana, sans-serif
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('./Manrope/Manrope-VariableFont_wght.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Manrope Medium';
+    src: url('./Manrope/static/Manrope-Medium.ttf');
+}
+
+#card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 350px;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+    border-radius: 20px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #313A49;
+    margin-bottom: 20px;
+}
+
+#separator {
+    width: 100%;
+    height: 20px;
+    background-image: url('./images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#title {
+    color: #53FFAB;
+    font-size: small;
+    font-family: 'Manrope Medium', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-30px, -30px);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: #53FFAB;
+    border-radius: 100%;
+    border-image: url('./images/icon-dice.svg');
+    background-size: auto;
+}
+
+#button div {
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-12px);
+    position: relative;
+    margin: auto;
+    background-image: url('./images/icon-dice.svg');
+}
+
+#button:hover {
+    box-shadow: 0 0 40px 0 #53FFAB;
+}
+
+@media (max-width: 375px) {
+    #card {
+        top: 25%;
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+}
